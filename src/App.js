@@ -7,7 +7,7 @@ import { ApolloClient,InMemoryCache,ApolloProvider} from '@apollo/client'
 function App() {
   const client = new ApolloClient({
       cache: new InMemoryCache(),
-      url: 'https://countries.trevorblades.com'
+      uri: 'https://countries.trevorblades.com'
   })
   return (
     <ApolloProvider client={client}>
