@@ -18,7 +18,7 @@ const Home = () => {
   <div className='home'>
     <div className='title'>
     <h1>List of Countries</h1>
-    <Link to='/search'>Search for Countries</Link>
+    <Link to='/search'>Search for Country</Link>
     </div>
       <div className='listOfCountries'>
        {loading && <h3>Loading...</h3>}
