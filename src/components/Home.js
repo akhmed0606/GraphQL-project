@@ -18,7 +18,7 @@ const Home = () => {
   <div className='home'>
     <div className='title'>
     <h1>List of Countries</h1>
-    <Link to='/search'>Search for Country</Link>
+    <Link to='/search'className='link'>Search for Country</Link>
     </div>
       <div className='listOfCountries'>
        {loading && <h3>Loading...</h3>}
@@ -26,8 +26,8 @@ const Home = () => {
        {data && data.countries.map((country,id) => {
          return (
          <div key={id}> 
-              <h2>{country.name} | {country.code}</h2>
-              <h4>{country.capital} {country.emoji}</h4>
+              <h2>{country.name}  <label>{country.emoji}</label></h2>
+              <h4 className='border'>{country.capital} | {country.code}</h4>
          </div>
        )
        })}

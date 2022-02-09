@@ -25,7 +25,7 @@ const Search = () => {
   return (
     <div className="search">
       <div className="inputs">
-      <Link to="/"> List of Countries</Link>
+      <Link to="/" className='link'> List of Countries</Link>
         <input type="text" placeholder="E.g RU" onChange={handleChange} />
         <button
           onClick={() => {
