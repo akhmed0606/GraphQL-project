@@ -17,7 +17,7 @@ const QUIERY_SEARCH = gql`
 const Search = () => {
   const [name, setName] = useState("");
   const [searchCountry, { data }] = useLazyQuery(QUIERY_SEARCH);
-
+   
   function handleChange(e) {
     setName(e.target.value);
     e.target.reset()

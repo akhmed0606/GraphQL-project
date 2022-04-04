@@ -15,6 +15,7 @@ const QUERY_LIST_OF_COUNTRIES = gql`
 const Home = () => {
   const { data, loading, error } = useQuery(QUERY_LIST_OF_COUNTRIES)
   return (
+    
   <div className='home'>
     <div className='title'>
     <h1>List of Countries</h1>

@@ -83,3 +83,15 @@ button {
 .border {
   border-bottom: 3px solid cornflowerblue;
 }
+h1 {
+ color: white;
+ text-align: center;
+}
+.countryDisplay {
+   min-height: 40vh;
+   min-width: 40vw;
+   background-color: black;
+   border: 1px solid white;
+   border-radius: 10px;
+   margin-top: 1rem;
+}
